@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Light and Nature Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --green-dark: #064e3b;
+    }
+    .gold-text { color: var(--gold); }
+    .gold-bg { background-color: var(--gold); }
+    .green-bg { background-color: var(--green-dark); }
+    .green-text { color: var(--green-dark); }
+  </style>
+</head>
+<body class="bg-green-50 text-green-900 font-sans">
+
+<!-- HEADER -->
+<header class="fixed w-full green-bg bg-opacity-90 backdrop-blur-md text-white shadow-lg z-50 animate__animated animate__fadeInDown">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <a href="#home" class="flex items-center space-x-3">
+      <img src="lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
+      <span class="font-bold text-xl tracking-wide">LIGHT AND NATURE FOUNDATION</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="#home" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="projects.html" class="hover:text-yellow-300">Projects</a>
+      <a href="leadership.html" class="hover:text-yellow-300">Leadership</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 bg-green-800 text-white">
+    <a href="index.html" class="block hover:text-yellow-300">Home</a>
+    <a href="about.html" class="block hover:text-yellow-300">About</a>
+    <a href="projects.html" class="block hover:text-yellow-300">Projects</a>
+    <a href="leadership.html" class="block hover:text-yellow-300">Leadership</a>
+    <a href="contact.html" class="block hover:text-yellow-300">Contact</a>
+  </nav>
+</header>
+
+<!-- ABOUT US SECTION -->
+<section id="about" class="py-20 px-6 max-w-7xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl font-bold green-text mb-4 animate__animated animate__fadeIn">
+      <span class="gold-text">🌿</span> About Us <span class="gold-text">☀️</span>
+    </h2>
+    <div class="w-24 h-1 gold-bg mx-auto mb-6"></div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Left Column - Image -->
+    <div class="rounded-xl overflow-hidden shadow-2xl animate__animated animate__fadeInLeft">
+      <img src="aboutphoto.jpeg" alt="LNF Team in Nature" class="w-full h-auto object-cover" />
+    </div>
+
+    <!-- Right Column - Content -->
+    <div class="animate__animated animate__fadeInRight">
+      <div class="mb-10">
+        <h3 class="text-2xl font-bold gold-text mb-4">Who We Are</h3>
+        <p class="text-lg leading-relaxed">
+          The Light and Nature Foundation (LNF) is a community-rooted, nonprofit organization based in Kisumu, Kenya. We exist to uplift the lives of marginalized populations while nurturing the natural world around us. By fusing human dignity with environmental consciousness, we inspire renewal, equity, and sustainable living for all.
+        </p>
+      </div>
+
+      <div class="bg-green-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-10">
+        <h3 class="text-2xl font-bold green-text mb-3">Vision Statement</h3>
+        <p class="italic text-lg">
+          "To illuminate a world where the harmony between light and nature inspires renewal, awareness, and sustainable living for all life on earth."
+        </p>
+      </div>
+
+      <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-green-600">
+        <h3 class="text-2xl font-bold green-text mb-3">Mission Statement</h3>
+        <p class="text-lg">
+          The Light and Nature Foundation exists to explore, protect, and celebrate the vital relationships between light—both symbolic and natural—and the environment. Through education, art, science and community action we inspire a deeper connection to the natural world, advocate for sustainable practices & foster a culture of hope, clarity and ecological responsibility.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Values -->
+  <div class="mt-20 text-center">
+    <h3 class="text-3xl font-bold green-text mb-8">Our Core Values</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="text-4xl gold-text mb-4">🌱</div>
+        <h4 class="text-xl font-bold green-text mb-2">Sustainability</h4>
+        <p>Commitment to practices that protect and preserve our natural world for future generations.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="text-4xl gold-text mb-4">🤝</div>
+        <h4 class="text-xl font-bold green-text mb-2">Community</h4>
+        <p>Empowering local communities through inclusive participation and shared responsibility.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="text-4xl gold-text mb-4">💡</div>
+        <h4 class="text-xl font-bold green-text mb-2">Innovation</h4>
+        <p>Creative solutions that bridge traditional knowledge with modern environmental science.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="green-bg text-yellow-200 py-6 text-center">
+  &copy; <span id="year"></span> Light and Nature Foundation. All rights reserved.
+
+  <!-- Email -->
+  <div class="mt-2 text-sm">
+  </div>
+
+  <!-- Icons -->
+  <div class="mt-4 space-x-3 text-white text-lg">
+    <!-- Decorative Environmental Icons -->
+  
+
+    <!-- Social Media Icons -->
+     <a href="mailto:lightandnaturefoundation@gmail.com" class="inline-block hover:text-yellow-400">
+  <img src="https://img.icons8.com/fluency/24/email-sign.png" class="inline w-6" alt="Email Us"/>
+</a>
+    <a href="https://facebook.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/facebook-new.png" class="inline w-6" alt="Facebook"/>
+    </a>
+    <a href="https://x.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx--v1.png" class="inline w-6" alt="Twitter X"/>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/instagram-new.png" class="inline w-6" alt="Instagram"/>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/linkedin.png" class="inline w-6" alt="LinkedIn"/>
+    </a>
+  </div>
+</footer>
+
+<!-- JS -->
+<script>
+  // Hamburger Toggle
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+
+  // Dynamic Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Slideshow Logic
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? '1' : '0';
+    });
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  setInterval(nextSlide, 5000); // 5 seconds
+  showSlide(current);
+</script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Light and Nature Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --green-dark: #064e3b;
+    }
+    .gold-text { color: var(--gold); }
+    .gold-bg { background-color: var(--gold); }
+    .green-bg { background-color: var(--green-dark); }
+    .green-text { color: var(--green-dark); }
+  </style>
+</head>
+<body class="bg-green-50 text-green-900 font-sans">
+
+<!-- HEADER -->
+<header class="fixed w-full green-bg bg-opacity-90 backdrop-blur-md text-white shadow-lg z-50 animate__animated animate__fadeInDown">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <a href="#home" class="flex items-center space-x-3">
+      <img src="lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
+      <span class="font-bold text-xl tracking-wide">LIGHT AND NATURE FOUNDATION</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="projects.html" class="hover:text-yellow-300">Projects</a>
+      <a href="leadership.html" class="hover:text-yellow-300">Leadership</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 bg-green-800 text-white">
+    <a href="index.html" class="block hover:text-yellow-300">Home</a>
+    <a href="about.html" class="block hover:text-yellow-300">About</a>
+    <a href="projects.html" class="block hover:text-yellow-300">Projects</a>
+    <a href="leadership.html" class="block hover:text-yellow-300">Leadership</a>
+    <a href="contact.html" class="block hover:text-yellow-300">Contact</a>
+  </nav>
+</header>
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Light & Nature Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nature: {
+                            50: '#f0f7eb',
+                            100: '#e1f5e1',
+                            300: '#81c784',
+                            500: '#4caf50',
+                            700: '#388e3c',
+                            900: '#1b5e20',
+                        },
+                        sun: {
+                            300: '#ffd54f',
+                            500: '#ffc107',
+                            700: '#ffa000',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .form-field:focus-within label {
+            transform: translateY(-24px) scale(0.85);
+            color: #388e3c;
+        }
+        .form-field:not(:placeholder-shown) + label {
+            transform: translateY(-24px) scale(0.85);
+        }
+    </style>
+</head>
+<body class="font-body bg-nature-50 min-h-screen">
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+        <!-- Floating Nature Elements -->
+        <div class="absolute top-20 left-10 opacity-20 animate-float text-5xl">🌿</div>
+        <div class="absolute bottom-1/4 right-10 opacity-15 animate-float text-6xl" style="animation-delay: 1s;">☀️</div>
+        <div class="absolute top-1/3 right-20 opacity-10 animate-float text-7xl" style="animation-delay: 2s;">🌱</div>
+        
+        <!-- Contact Section -->
+        <div class="relative z-10">
+            <div class="text-center mb-16 animate-fade-in" style="animation-delay: 0.2s;">
+                <h1 class="font-heading text-4xl md:text-5xl text-nature-900 mb-4">🌿☀️ Contact Us</h1>
+                <div class="w-24 h-1 bg-sun-500 mx-auto mb-6 rounded-full"></div>
+                <p class="text-nature-700 max-w-2xl mx-auto">Reach out to us for collaborations, questions, or to learn more about our initiatives.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Info -->
+                <div class="lg:w-1/3 animate-fade-in" style="animation-delay: 0.4s;">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-sun-500 h-full">
+                        <h2 class="font-heading text-2xl text-nature-800 mb-6">Our Contact Details</h2>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-sun-500 text-2xl mr-4 mt-1">📍</div>
+                                <div>
+                                    <h3 class="font-semibold text-nature-900">Our Location</h3>
+                                    <p class="text-nature-700">Kisumu, Kenya</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-sun-500 text-2xl mr-4 mt-1">📧</div>
+                                <div>
+                                    <h3 class="font-semibold text-nature-900">Email Us</h3>
+                                    <a href="mailto:info@lightandnaturefoundation.org" class="text-nature-700 hover:text-nature-500 transition-colors">info@lightandnaturefoundation.org</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-sun-500 text-2xl mr-4 mt-1">📱</div>
+                                <div>
+                                    <h3 class="font-semibold text-nature-900">Call Us</h3>
+                                    <a href="tel:+254797201276" class="text-nature-700 hover:text-nature-500 transition-colors">+254 797 201276</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-6 border-t border-nature-100">
+                            <h3 class="font-heading text-xl text-nature-800 mb-4">Follow Our Work</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-nature-100 flex items-center justify-center text-nature-700 hover:bg-sun-500 hover:text-white transition-colors">
+                                    <span class="text-xl">📱</span>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-nature-100 flex items-center justify-center text-nature-700 hover:bg-sun-500 hover:text-white transition-colors">
+                                    <span class="text-xl">📷</span>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-nature-100 flex items-center justify-center text-nature-700 hover:bg-sun-500 hover:text-white transition-colors">
+                                    <span class="text-xl">🔗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="lg:w-2/3 animate-fade-in" style="animation-delay: 0.6s;">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-nature-500">
+                        <h2 class="font-heading text-2xl text-nature-800 mb-6">Send Us a Message</h2>
+                        
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Name Field -->
+                                <div class="form-field relative">
+                                    <input type="text" id="name" class="w-full px-4 py-3 border-b border-nature-300 focus:border-nature-500 outline-none bg-transparent transition-colors peer" placeholder=" ">
+                                    <label for="name" class="absolute left-4 top-3 text-nature-500 transition-all duration-300 pointer-events-none peer-placeholder-shown:text-nature-400">Your Name</label>
+                                </div>
+                                
+                                <!-- Email Field -->
+                                <div class="form-field relative">
+                                    <input type="email" id="email" class="w-full px-4 py-3 border-b border-nature-300 focus:border-nature-500 outline-none bg-transparent transition-colors peer" placeholder=" ">
+                                    <label for="email" class="absolute left-4 top-3 text-nature-500 transition-all duration-300 pointer-events-none peer-placeholder-shown:text-nature-400">Email Address</label>
+                                </div>
+                            </div>
+                            
+                            <!-- Subject Field -->
+                            <div class="form-field relative">
+                                <input type="text" id="subject" class="w-full px-4 py-3 border-b border-nature-300 focus:border-nature-500 outline-none bg-transparent transition-colors peer" placeholder=" ">
+                                <label for="subject" class="absolute left-4 top-3 text-nature-500 transition-all duration-300 pointer-events-none peer-placeholder-shown:text-nature-400">Subject</label>
+                            </div>
+                            
+                            <!-- Message Field -->
+                            <div class="form-field relative">
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 border-b border-nature-300 focus:border-nature-500 outline-none bg-transparent transition-colors peer resize-none" placeholder=" "></textarea>
+                                <label for="message" class="absolute left-4 top-3 text-nature-500 transition-all duration-300 pointer-events-none peer-placeholder-shown:text-nature-400">Your Message</label>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="w-full bg-nature-500 hover:bg-nature-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                                Send Message
+                                <span class="ml-2 animate-pulse-slow">✉️</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<div class="mt-8 p-4 bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 text-sm rounded-md animate__animated animate__fadeIn animate__delay-6s">
+  ⚠️ <strong>Disclaimer:</strong> This contact page is still under development. submiting your message may not be fully functional yet. Please contact us directly using our email or mobile contact.
+</div>
+<!-- REST OF PAGE CONTENT -->
+<!-- Example: About, Projects, Leadership, Contact... (reuse from your current code) -->
+
+<!-- FOOTER -->
+<footer class="green-bg text-yellow-200 py-6 text-center">
+  &copy; <span id="year"></span> Light and Nature Foundation. All rights reserved.
+
+  <!-- Email -->
+  <div class="mt-2 text-sm">
+  </div>
+
+  <!-- Icons -->
+  <div class="mt-4 space-x-3 text-white text-lg">
+    <!-- Decorative Environmental Icons -->
+  
+
+    <!-- Social Media Icons -->
+     <a href="mailto:lightandnaturefoundation@gmail.com" class="inline-block hover:text-yellow-400">
+  <img src="https://img.icons8.com/fluency/24/email-sign.png" class="inline w-6" alt="Email Us"/>
+</a>
+    <a href="https://facebook.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/facebook-new.png" class="inline w-6" alt="Facebook"/>
+    </a>
+    <a href="https://x.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx--v1.png" class="inline w-6" alt="Twitter X"/>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/instagram-new.png" class="inline w-6" alt="Instagram"/>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/linkedin.png" class="inline w-6" alt="LinkedIn"/>
+    </a>
+  </div>
+</footer>
+
+<!-- JS -->
+<script>
+  // Hamburger Toggle
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+
+  // Dynamic Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Slideshow Logic
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? '1' : '0';
+    });
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  setInterval(nextSlide, 5000); // 5 seconds
+  showSlide(current);
+</script>
+</body>
+</html>
