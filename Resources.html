@@ -35,9 +35,10 @@
       <a href="about.html" class="hover:text-yellow-300">About</a>
       <a href="projects.html" class="hover:text-yellow-300">Projects</a>
       <a href="leadership.html" class="hover:text-yellow-300">Leadership</a>
-      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
       <a href="galery.html" class="hover:text-yellow-300">Gallery</a>
       <a href="Resources.html" class="hover:text-yellow-300">Resources</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+
     </nav>
 
     <!-- Hamburger Menu -->
@@ -57,6 +58,75 @@
     <a href="about.html" class="block hover:text-yellow-300">About</a>
     <a href="projects.html" class="block hover:text-yellow-300">Projects</a>
     <a href="leadership.html" class="block hover:text-yellow-300">Leadership</a>
+    <a href="galery.html" class="block hover:text-yellow-300">Gallery</a>
+    <a href="Resources.html" class="block hover:text-yellow-300">Resources</a>
+    <a href="contact.html" class="block hover:text-yellow-300">Contact</a>
+  </nav>
+</header>
+
+<!-- SLIDESHOW HERO SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Light and Nature Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="icon" type="image/png" href="lnf log.jpeg">  
+        <style>
+    :root {
+      --gold: #d4af37;
+      --green-dark: #064e3b;
+    }
+    .gold-text { color: var(--gold); }
+    .gold-bg { background-color: var(--gold); }
+    .green-bg { background-color: var(--green-dark); }
+    .green-text { color: var(--green-dark); }
+  </style>
+</head>
+<body class="bg-green-50 text-green-900 font-sans">
+
+<!-- HEADER -->
+<header class="fixed w-full green-bg bg-opacity-90 backdrop-blur-md text-white shadow-lg z-50 animate__animated animate__fadeInDown">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <a href="#home" class="flex items-center space-x-3">
+      <img src="lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
+      <span class="font-bold text-xl tracking-wide">LIGHT AND NATURE FOUNDATION</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="projects.html" class="hover:text-yellow-300">Projects</a>
+      <a href="leadership.html" class="hover:text-yellow-300">Leadership</a>
+      <a href="galery.html" class="hover:text-yellow-300">Gallery</a>
+      <a href="Resources.html" class="hover:text-yellow-300">Resources</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 bg-green-800 text-white">
+    <a href="index.html" class="block hover:text-yellow-300">Home</a>
+    <a href="about.html" class="block hover:text-yellow-300">About</a>
+    <a href="projects.html" class="block hover:text-yellow-300">Projects</a>
+    <a href="leadership.html" class="block hover:text-yellow-300">Leadership</a>
+    <a href="galery.html" class="block hover:text-yellow-300">Gallery</a>
+    <a href="Resources.html" class="block hover:text-yellow-300">Resources</a>
     <a href="contact.html" class="block hover:text-yellow-300">Contact</a>
   </nav>
 </header>
@@ -88,6 +158,72 @@
 </section>
 
 <!-- REST OF PAGE CONTENT -->
+<!-- Example: About, Projects, Leadership, Contact... (reuse from your current code) -->
+
+<!-- FOOTER -->
+<footer class="green-bg text-yellow-200 py-6 text-center">
+  &copy; <span id="year"></span> Light and Nature Foundation. All rights reserved.
+
+  <!-- Email -->
+  <div class="mt-2 text-sm">
+  </div>
+
+  <!-- Icons -->
+  <div class="mt-4 space-x-3 text-white text-lg">
+    <!-- Decorative Environmental Icons -->
+  
+
+    <!-- Social Media Icons -->
+     <a href="mailto:lightandnaturefoundation@gmail.com" class="inline-block hover:text-yellow-400">
+  <img src="https://img.icons8.com/fluency/24/email-sign.png" class="inline w-6" alt="Email Us"/>
+</a>
+    <a href="https://facebook.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/facebook-new.png" class="inline w-6" alt="Facebook"/>
+    </a>
+    <a href="https://x.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/twitterx--v1.png" class="inline w-6" alt="Twitter X"/>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/instagram-new.png" class="inline w-6" alt="Instagram"/>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="inline-block hover:text-yellow-400">
+      <img src="https://img.icons8.com/fluency/24/linkedin.png" class="inline w-6" alt="LinkedIn"/>
+    </a>
+  </div>
+</footer>
+
+<!-- JS -->
+<script>
+  // Hamburger Toggle
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+
+  // Dynamic Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Slideshow Logic
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? '1' : '0';
+    });
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  setInterval(nextSlide, 5000); // 5 seconds
+  showSlide(current);
+</script>
+</body>
+</html>
+
 <!-- Example: About, Projects, Leadership, Contact... (reuse from your current code) -->
 
 <!-- FOOTER -->
