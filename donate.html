@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,16 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <style>
-    :root {
-      --gold: #d4af37;
-      --green-dark: #064e3b;
-    }
-    .gold-text { color: var(--gold); }
-    .gold-bg { background-color: var(--gold); }
-    .green-bg { background-color: var(--green-dark); }
-    .green-text { color: var(--green-dark); }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-green-50 text-green-900 font-sans">
 
@@ -24,7 +16,7 @@
 <header class="fixed w-full green-bg bg-opacity-90 backdrop-blur-md text-white shadow-lg z-50 animate__animated animate__fadeInDown">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
     <a href="#home" class="flex items-center space-x-3">
-      <img src="lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
+      <img src="assets/images/lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
       <span class="font-bold text-xl tracking-wide">LIGHT AND NATURE FOUNDATION</span>
     </a>
 
@@ -105,14 +97,14 @@
   <div class="text-center animate__animated animate__fadeInUp animate__delay-5s">
     <button type="submit"
             class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg shadow-md transition duration-300 font-semibold">
-      🌱 Donate Now
+      <i class="fas fa-seedling"></i> Donate Now
     </button>
   </div>
 </form>
 
 <!-- Disclaimer -->
 <div class="mt-8 p-4 bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 text-sm rounded-md animate__animated animate__fadeIn animate__delay-6s">
-  ⚠️ <strong>Disclaimer:</strong> This donation page is still under development. Payment processing features may not be fully functional yet. Please contact us directly for verified donation options.
+  <i class="fas fa-exclamation-triangle"></i> <strong>Disclaimer:</strong> This donation page is still under development. Payment processing features may not be fully functional yet. Please contact us directly for verified donation options.
 </div>
 
 <!-- REST OF PAGE CONTENT -->
@@ -181,3 +173,7 @@
 </script>
 </body>
 </html>
+
+
+
+

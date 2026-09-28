@@ -1,22 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Projects | Sustainable Impact</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <style>
-      :root {
-        --gold: #d4af37;
-        --green-dark: #064e3b;
-      }
-      .gold-text { color: var(--gold); }
-      .gold-bg { background-color: var(--gold); }
-      .green-bg { background-color: var(--green-dark); }
-      .green-text { color: var(--green-dark); }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -47,13 +38,14 @@
             }
         }
     </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-body bg-green-100">
 <!-- HEADER -->
 <header class="fixed w-full green-bg bg-opacity-90 backdrop-blur-md text-white shadow-lg z-50 animate__animated animate__fadeInDown">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
     <a href="#home" class="flex items-center space-x-3">
-      <img src="lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
+      <img src="assets/images/lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
       <span class="font-bold text-xl tracking-wide">LIGHT AND NATURE FOUNDATION</span>
     </a>
 
@@ -105,7 +97,7 @@
     <main class="max-w-6xl mx-auto px-4 py-12">
         <!-- What We Do Section -->
         <section class="mb-20">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+            <div class="bg-white rounded-xl shadow-lg hover-lift overflow-hidden mb-8">
                 <div class="bg-green-700 p-6">
                     <h2 class="font-heading text-3xl text-gold-100">What We Do</h2>
                 </div>
@@ -188,14 +180,14 @@
 
         <!-- Our Pillars Section -->
         <section class="mb-20">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-white rounded-xl shadow-lg hover-lift overflow-hidden">
                 <div class="bg-green-700 p-6">
                     <h2 class="font-heading text-3xl text-gold-100">Our Pillars</h2>
                 </div>
                 <div class="p-6 md:p-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Pillar 1 -->
                     <div class="bg-gold-100 rounded-lg p-6 text-center shadow-md hover:shadow-gold-lg transition-all transform hover:-translate-y-1">
-                        <div class="text-4xl mb-4">🌱</div>
+                        <div class="text-4xl mb-4"><i class="fas fa-seedling"></i></div>
                         <h3 class="font-heading text-xl text-green-900 mb-2">Sustainability</h3>
                         <p class="text-green-800">Projects that last beyond us</p>
                     </div>
@@ -209,14 +201,14 @@
 
                     <!-- Pillar 3 -->
                     <div class="bg-gold-100 rounded-lg p-6 text-center shadow-md hover:shadow-gold-lg transition-all transform hover:-translate-y-1">
-                        <div class="text-4xl mb-4">💡</div>
+                        <div class="text-4xl mb-4"><i class="fas fa-lightbulb"></i></div>
                         <h3 class="font-heading text-xl text-green-900 mb-2">Empowerment</h3>
                         <p class="text-green-800">Tools to change lives</p>
                     </div>
 
                     <!-- Pillar 4 -->
                     <div class="bg-gold-100 rounded-lg p-6 text-center shadow-md hover:shadow-gold-lg transition-all transform hover:-translate-y-1">
-                        <div class="text-4xl mb-4">🌍</div>
+                        <div class="text-4xl mb-4"><i class="fas fa-globe-africa"></i></div>
                         <h3 class="font-heading text-xl text-green-900 mb-2">Restoration</h3>
                         <p class="text-green-800">Healing people & planet</p>
                     </div>
@@ -226,7 +218,7 @@
 
         <!-- Projects & Impact Section -->
         <section>
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-white rounded-xl shadow-lg hover-lift overflow-hidden">
                 <div class="bg-green-700 p-6">
                     <h2 class="font-heading text-3xl text-gold-100">Projects & Impact</h2>
                 </div>
@@ -369,4 +361,9 @@
 </script>
 </body>
 </html>
+
+
+
+
+
 

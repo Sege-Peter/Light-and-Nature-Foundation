@@ -1,0 +1,35 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+  --gold: #d4af37;
+  --green-dark: #064e3b;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Playfair Display', serif;
+}
+
+.gold-text { color: var(--gold) !important; }
+.gold-bg { background-color: var(--gold) !important; }
+.green-bg { background-color: var(--green-dark) !important; }
+.green-text { color: var(--green-dark) !important; }
+
+/* Modern UI Enhancements */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}

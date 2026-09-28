@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,16 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <style>
-    :root {
-      --gold: #d4af37;
-      --green-dark: #064e3b;
-    }
-    .gold-text { color: var(--gold); }
-    .gold-bg { background-color: var(--gold); }
-    .green-bg { background-color: var(--green-dark); }
-    .green-text { color: var(--green-dark); }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-green-50 text-green-900 font-sans">
 
@@ -24,7 +16,7 @@
 <header class="fixed w-full green-bg bg-opacity-90 backdrop-blur-md text-white shadow-lg z-50 animate__animated animate__fadeInDown">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
     <a href="#home" class="flex items-center space-x-3">
-      <img src="lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
+      <img src="assets/images/lnf log.jpeg" alt="LNF Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400" />
       <span class="font-bold text-xl tracking-wide">LIGHT AND NATURE FOUNDATION</span>
     </a>
 
@@ -66,7 +58,7 @@
 <section id="about" class="py-20 px-6 max-w-7xl mx-auto">
   <div class="text-center mb-16">
     <h2 class="text-4xl font-bold green-text mb-4 animate__animated animate__fadeIn">
-      <span class="gold-text">🌿</span> About Us <span class="gold-text">☀️</span>
+      <span class="gold-text"><i class="fas fa-leaf"></i></span> About Us <span class="gold-text"><i class="fas fa-sun"></i></span>
     </h2>
     <div class="w-24 h-1 gold-bg mx-auto mb-6"></div>
   </div>
@@ -74,7 +66,7 @@
   <div class="grid md:grid-cols-2 gap-12 items-center">
     <!-- Left Column - Image -->
     <div class="rounded-xl overflow-hidden shadow-2xl animate__animated animate__fadeInLeft">
-      <img src="aboutphoto.jpeg" alt="LNF Team in Nature" class="w-full h-auto object-cover" />
+      <img src="assets/images/aboutphoto.jpeg" alt="LNF Team in Nature" class="w-full h-auto object-cover" />
     </div>
 
     <!-- Right Column - Content -->
@@ -107,7 +99,7 @@
     <h3 class="text-3xl font-bold green-text mb-8">Our Core Values</h3>
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-        <div class="text-4xl gold-text mb-4">🌱</div>
+        <div class="text-4xl gold-text mb-4"><i class="fas fa-seedling"></i></div>
         <h4 class="text-xl font-bold green-text mb-2">Sustainability</h4>
         <p>Commitment to practices that protect and preserve our natural world for future generations.</p>
       </div>
@@ -117,7 +109,7 @@
         <p>Empowering local communities through inclusive participation and shared responsibility.</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-        <div class="text-4xl gold-text mb-4">💡</div>
+        <div class="text-4xl gold-text mb-4"><i class="fas fa-lightbulb"></i></div>
         <h4 class="text-xl font-bold green-text mb-2">Innovation</h4>
         <p>Creative solutions that bridge traditional knowledge with modern environmental science.</p>
       </div>
@@ -188,3 +180,7 @@
 </script>
 </body>
 </html>
+
+
+
+
