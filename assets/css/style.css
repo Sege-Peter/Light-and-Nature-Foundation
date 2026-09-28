@@ -1,35 +1,80 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap');
 
 :root {
-  --gold: #d4af37;
-  --green-dark: #064e3b;
+  --brand-DEFAULT: #16a34a;
+  --bg-light: #f8fafc;
+  --card-bg: #ffffff;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: #1e293b;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.02em;
 }
 
-.gold-text { color: var(--gold) !important; }
-.gold-bg { background-color: var(--gold) !important; }
-.green-bg { background-color: var(--green-dark) !important; }
-.green-text { color: var(--green-dark) !important; }
-
-/* Modern UI Enhancements */
+/* Modern Light UI Enhancements */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-8px);
+  z-index: 10;
+}
+
+.hover-lift::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  opacity: 0;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); /* Soft, large shadow */
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+  pointer-events: none;
+}
+.hover-lift:hover::after {
+  opacity: 1;
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #14532d, #16a34a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Image Hover Effects */
+img {
+  transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.group:hover img {
+  transform: scale(1.03);
+}
+
+/* Scroll Reveal Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: opacity, transform;
+}
+.animate-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
